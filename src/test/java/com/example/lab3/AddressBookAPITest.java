@@ -102,7 +102,7 @@ public class AddressBookAPITest {
 
         this.mockMvc.perform(get("/addressBook/1/buddyInfo")
                 .contentType(MediaType.APPLICATION_JSON)
-                .accept(MediaType.APPLICATION_JSON)).andDo(print())
+                .accept(MediaType.APPLICATION_JSON))
                 .andExpect(content().json("{\n" +
                         "  \"_embedded\" : {\n" +
                         "    \"buddyInfoes\" : [ {\n" +
